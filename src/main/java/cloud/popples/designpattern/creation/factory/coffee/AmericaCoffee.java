@@ -10,6 +10,8 @@ public class AmericaCoffee implements Coffee {
 
     private String name;
 
+    public AmericaCoffee() {}
+
     public AmericaCoffee(String name) {
         this.name = name;
     }

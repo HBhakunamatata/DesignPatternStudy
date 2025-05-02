@@ -10,6 +10,10 @@ public class LatteCoffee implements Coffee {
 
     private String name;
 
+    public  LatteCoffee() {
+
+    }
+
     public LatteCoffee(String name) {
         this.name = name;
     }

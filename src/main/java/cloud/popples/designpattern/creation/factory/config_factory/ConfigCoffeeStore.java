@@ -1,5 +1,7 @@
 package cloud.popples.designpattern.creation.factory.config_factory;
 
+import cloud.popples.designpattern.creation.factory.coffee.Coffee;
+
 /**
  * @description: 基于configfactory的咖啡店
  * @author: Mr.Han
@@ -7,4 +9,9 @@ package cloud.popples.designpattern.creation.factory.config_factory;
  */
 
 public class ConfigCoffeeStore {
+
+    public Coffee createCoffee(String key) {
+        return ConfigFactory.createCoffee(key);
+    }
+
 }

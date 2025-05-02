@@ -16,15 +16,26 @@ public class SimpleCoffeeFactory {
         Coffee result = null;
         switch (coffeeType) {
             case "latte":
-                result = new LatteCoffee("Latte");
+                result = createLatteCoffee();
                 break;
             case "america":
-                result = new AmericaCoffee("America");
+                result = createAmericaCoffee();
                 break;
             default:
                 throw new RuntimeException("No such coffee type: " + coffeeType);
         }
         return result;
     }
+
+
+    private static Coffee createLatteCoffee() {
+        return new LatteCoffee("Latte");
+    }
+
+    private static Coffee createAmericaCoffee() {
+        return new AmericaCoffee("America");
+    }
+
+
 
 }
