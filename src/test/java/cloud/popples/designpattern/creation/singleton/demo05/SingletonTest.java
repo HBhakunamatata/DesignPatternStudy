@@ -1,6 +1,5 @@
 package cloud.popples.designpattern.creation.singleton.demo05;
 
-import cloud.popples.designpattern.creation.singleton.demo05.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
