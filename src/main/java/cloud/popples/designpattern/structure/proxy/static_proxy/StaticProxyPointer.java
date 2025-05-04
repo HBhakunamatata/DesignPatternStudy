@@ -1,7 +1,6 @@
 package cloud.popples.designpattern.structure.proxy.static_proxy;
 
 import cloud.popples.designpattern.structure.proxy.SellTicket;
-import cloud.popples.designpattern.structure.proxy.TrainStation;
 
 /**
  * @description: 火车票代售点-静态代理实现
