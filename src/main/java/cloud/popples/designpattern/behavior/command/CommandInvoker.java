@@ -20,6 +20,7 @@ public class CommandInvoker {
     public void undoLast() {
         if (!commands.isEmpty()) {
             commands.get(commands.size() - 1).undo();
+            commands.remove(commands.size() - 1);
         } else {
             System.out.println("No command executed");
         }

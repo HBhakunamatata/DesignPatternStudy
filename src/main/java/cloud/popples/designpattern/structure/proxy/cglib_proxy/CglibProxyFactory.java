@@ -30,7 +30,7 @@ public class CglibProxyFactory implements MethodInterceptor {
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy)
         throws Throwable {
         System.out.println("cglib proxy is working");
-        Object result = method.invoke(ticketSeller, objects);
-        return result;
+//        Object result = method.invoke(ticketSeller, objects);
+        return methodProxy.invokeSuper(o, objects);
     }
 }

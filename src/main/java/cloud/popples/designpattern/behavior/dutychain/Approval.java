@@ -21,10 +21,11 @@ public abstract class Approval {
     }
 
     public final void submit(LeaveRequest leaveRequest) {
+        if (nextApproval == null) {
+            return;
+        }
         if (leaveRequest.getDays() <= limit) {
             approve(leaveRequest);
-        } else if (nextApproval == null) {
-            return;
         } else {
             nextApproval.submit(leaveRequest);
         }

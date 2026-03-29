@@ -2,6 +2,7 @@ package cloud.popples.designpattern.behavior.memento;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 import java.util.Optional;
 
 /**
